@@ -33,7 +33,7 @@ $today=date('Y-m-d');
 $sql="select * from taxees where date='$today' and amount=(select max(amount) from taxees where date='$today')";
 
 $run=mysqli_query($conn, $sql);
-
+//This is a comment
 //if not
 
 if(!$run){
